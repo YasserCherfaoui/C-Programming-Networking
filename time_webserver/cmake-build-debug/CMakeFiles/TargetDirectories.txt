@@ -1,0 +1,3 @@
+/home/jvlivs/Labs/c_programming/time_webserver/cmake-build-debug/CMakeFiles/time_webserver.dir
+/home/jvlivs/Labs/c_programming/time_webserver/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/jvlivs/Labs/c_programming/time_webserver/cmake-build-debug/CMakeFiles/rebuild_cache.dir

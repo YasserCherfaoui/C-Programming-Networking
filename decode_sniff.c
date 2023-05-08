@@ -11,14 +11,16 @@ unsigned int decode_tcp(const unsigned char *);
 
 void caught_packet(unsigned char *, const struct pcap_pkthdr *, const unsigned char *);
 
-int main(){
+int main(int argc, char **argv){
 	struct pcap_pkthdr cap_header; // pkthdr contains extra capture info;
 	const unsigned char *packet, *pkt_data;
 	char errbuf[PCAP_ERRBUF_SIZE];
 	char *device;
 	pcap_t *pcap_handle; // Works similarly to fd;
-
-	device = pcap_lookupdev(errbuf);
+	if (argc < 1)
+		device = pcap_lookupdev(errbuf);
+	else
+		strcpy(device, argv[1])
 	if(device == NULL)
 		pcap_fatal("pcap_lookupdev", errbuf);
 

@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "shadylib.h": "c",
+        "in.h": "c"
+    }
+}
